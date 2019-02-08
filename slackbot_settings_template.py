@@ -2,4 +2,4 @@
 
 API_TOKEN = "xoxb-yourbottoken"
 
-default_reply = 'notice-ip-to-slack running.'
+default_reply = "notice-ip-to-slack running."
