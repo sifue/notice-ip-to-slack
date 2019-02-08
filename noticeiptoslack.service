@@ -1,0 +1,11 @@
+[Unit]
+Description=NoticeIpToSlack
+
+[Service]
+ExecStart=/home/pi/workspace/notice-ip-to-slack/run.py
+Restart=always
+Type=forking
+PIDFile=/var/run/notice-ip-to-slack.pid
+
+[Install]
+WantedBy=multi-user.target
