@@ -18,7 +18,7 @@ def main():
 def daemonize():
     pid = os.fork()
     if pid > 0:
-        print("If you exec as not service, A permission error occurs. please ignore and kill a child process.")
+        print("If you exec as not service, a permission error occurs. Please ignore and kill a child process.")
         print("Parent process pid: {}".format(pid))
         pid_file = open("/var/run/notice-ip-to-slack.pid", "w")
         pid_file.write(str(pid) + "\n")
